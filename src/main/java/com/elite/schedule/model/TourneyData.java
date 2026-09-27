@@ -2,11 +2,17 @@ package com.elite.schedule.model;
 
 import java.util.List;
 
-public record TourneyData(
-        Tournament tournament,
-        List<Team> teams,
-        List<Game> games,
-        List<Standings> standings,
-        List<Location> locations
-) {
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class TourneyData {
+    private Tournament tournament;
+    private List<Team> teams;
+    private List<Game> games;
+    private List<Standings> standings;
+    private List<Location> locations;
 }

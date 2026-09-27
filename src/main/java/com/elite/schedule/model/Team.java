@@ -1,4 +1,15 @@
 package com.elite.schedule.model;
 
-public record Team(int id, String name, String coach, String division) {
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Team {
+    private int id;
+    private String name;
+    private String coach;
+    private String division;
 }
